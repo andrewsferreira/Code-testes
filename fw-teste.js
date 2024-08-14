@@ -43,7 +43,7 @@ const attackAttempts = [];
 
 // Lendo Lista de Permissão e de Bloqueio
 const loadLists = () => {
-    // Example allowlist IPs
+    // Exemplo de IP na lista de permissão
     allowlist.add('192.168.1.100'); // Exemplo de IP na lista de permissão
     // Exemplo de IP na lista de bloqueio com validação de bloqueio temporário aplicado.
     blocklist.set('192.168.1.200', Date.now()); // Exemplo de IP Bloqueado Imediatamente
@@ -140,7 +140,7 @@ const writeToCSV = (filePath, data, description) => {
     }
 };
 
-// Process CSV file using PapaParse
+// Processando CSV usando PapaParse
 const processCSV = (filePath) => {
     loadLists(); // Leitura de Lista de Permissão e blocklist
 
