@@ -4,7 +4,7 @@ const { Parser } = require('json2csv'); // Necessário para fazer a conversão e
 const path = require('path'); // Necessário para validar o 'path' de caminho de diretório
 
 // Diretório de arquivos
-const inputFilePath = path.join(__dirname, 'test-dataset.csv');
+const inputFilePath = path.join(__dirname, 'test-dataset.csv'); // Coloque o nome do CSV que irá carregar
 const blockedFilePath = path.join(__dirname, 'blocked-ips.csv');
 const flaggedFilePath = path.join(__dirname, 'flagged-ips.csv');
 const allowedFilePath = path.join(__dirname, 'allowed-ips.csv');
